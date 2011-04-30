@@ -1,0 +1,6 @@
+One list of girl names, and one list of boy names.  Suitable for parsing similar to any of the files in /usr/share/dict/.
+
+For ruby, to get a random name do:
+
+     names = IO.readlines('/usr/share/dict/girlnames')
+	 names[Random.new.rand(0..names.length)].chomp
